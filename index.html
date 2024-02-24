@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <center>
+        <h1 id = 'title'>Taj Mahal Trip</h1>
+    </center>
+    <div class="container">
+        <div class="shadow"><img class='lightbox' id = 'img1' src="./DSC_0039.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(1)" ></div>
+        <div class="shadow"><img class='lightbox' id = 'img2' src="./DSC_0044.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(2)"></div>
+        <div class="shadow"><img class='lightbox' id = 'img3' src="./DSC_0062.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(3)"></div>
+        <div class="shadow"><img class='lightbox' id = 'img4' src="./DSC_0063.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(4)"></div>
+        <div class="shadow"><img class='lightbox' id = 'img5' src="./DSC_0071.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(5)"></div>
+        <div class="shadow"><img class='lightbox' id = 'img6' src="./DSC_0077.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(6)"></div>
+        <div class="shadow"><img class='lightbox' id = 'img7' src="./DSC_0083.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(7)"></div>
+        <div class="shadow"><img class='lightbox' id = 'img8' src="./DSC_0085.JPG" style="width:-webkit-fill-available; height:-webkit-fill-available;" onclick="openSlideshow();currentPicture(8)"></div>
+    </div>
+    <div id="slideshow" class="slide">
+        <span class="xout" onclick="closeSlideshow()">&times;</span>
+        <div class="modal-content">
+          <div class="slides">
+            <center>
+                <img src="./DSC_0039.JPG"style="width:70%">
+            </center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0044.JPG" style="width:70%;"></center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0062.JPG" style="width:70%"></center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0063.JPG" style="width:70%"></center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0071.JPG" style="width:70%"></center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0077.JPG" style="width:70%"center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0083.JPG" style="width:70%"></center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0085.JPG" style="width:70%"></center>
+          </div>
+          <div class="slides">
+            <center><img src="./DSC_0091.JPG" style="width:70%"></center>
+          </div>
+        </div>
+        <a class="forward" onclick="moveSlide(1)">&#10095;</a>
+        <a class="backwards" onclick="moveSlide(-1)">&#10094;</a>
+    <script src="app.js"></script>
+</body>
+</html>
